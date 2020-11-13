@@ -6,13 +6,11 @@ import moduleAlias from 'module-alias'
 moduleAlias.addAlias('@', path.join(__dirname, '../'))
 import { Server } from '../app'
 import { printTime } from '@/utils'
+import { PORT } from '@/config'
 
 const iDebugger = debug('express:server')
 
-/**
- * Get port from environment and store in Express.
- */
-const httpPort = normalizePort(process.env.PORT || 5000)
+const httpPort = PORT
 
 const app = new Server().app
 
@@ -21,25 +19,6 @@ const httpServer = http.createServer(app)
 httpServer.on('error', onError)
 httpServer.on('listening', onListening)
 httpServer.listen(httpPort)
-
-/**
- * Normalize a port into a number, string, or false.
- */
-function normalizePort(val: any): number {
-    const port = parseInt(val, 10)
-
-    if (isNaN(port)) {
-        // named pipe
-        return val
-    }
-
-    if (port >= 0) {
-        // port number
-        return port
-    }
-
-    throw new Error('cannot resolve port.')
-}
 
 /**
  * Event listener for HTTP server "error" event.

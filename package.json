@@ -15,7 +15,10 @@
     "dev": "cross-env NODE_ENV=development ts-node-dev src/bin/www.ts",
     "rm": "rimraf node_modules",
     "watch": "tsc -w",
-    "start": "node ./dist/bin/www.js"
+    "start": "node ./dist/bin/www.js",
+    "test": "npm run test:e2e",
+    "test:unit": "mocha -r ts-node/register test/register.ts src/**/*.test.ts -R nyan -t 10000",
+    "test:e2e": "mocha -r ts-node/register test/register.ts test/**/*.test.ts -R nyan -t 10000"
   },
   "devDependencies": {
     "@types/compression": "^1.7.0",
@@ -24,9 +27,11 @@
     "@types/express-formidable": "^1.0.4",
     "@types/fs-extra": "^9.0.4",
     "@types/http-proxy": "^1.17.4",
+    "@types/mocha": "^8.0.4",
     "@types/module-alias": "^2.0.0",
     "@types/morgan": "^1.9.2",
     "@types/node": "^14.14.7",
+    "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "colors": "^1.4.0",
@@ -34,7 +39,10 @@
     "debug": "^4.2.0",
     "eslint": "^7.13.0",
     "eslint-config-cmyr": "^1.0.1",
+    "mocha": "^8.2.1",
     "rimraf": "^3.0.2",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1",
     "ts-node": "^9.0.0",
     "ts-node-dev": "^1.0.0",
     "typescript": "^4.0.5"

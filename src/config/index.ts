@@ -1,4 +1,5 @@
-
+const env = process.env
+export const PORT = Number(process.env.PORT || 5000)
 /**
  * 本机数据库的账号
  */
