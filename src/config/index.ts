@@ -3,7 +3,7 @@ import path = require('path')
 import fs = require('fs-extra')
 const modes = [
     '.env.local',
-    '.env',
+    '.env'
 ]
 let envParsed = {}
 for (let i = 0; i < modes.length; i++) {
@@ -17,11 +17,12 @@ if (process.env.NODE_ENV === 'development') {
     console.log(envParsed)
 }
 const env = process.env
-export const PORT = Number(process.env.PORT || 5000)
-/**
- * 本机数据库的账号
- */
-const auth = { user: 'test', password: '123456' }
 
-const rootUrl = '/'
-export { rootUrl, auth }
+/**
+ * 是否为debug
+ */
+export const IS_DEBUG = env.NODE_ENV === 'development'
+
+export const PORT = Number(env.PORT || 5000)
+
+export const ROOT_URL = env.ROOT_URL || '/'

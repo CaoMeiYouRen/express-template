@@ -3,10 +3,10 @@ import bodyParser from 'body-parser'
 import compression from 'compression'
 import formidableMiddleware from 'express-formidable'
 import router from './routes'
-import { rootUrl } from './config'
+import { ROOT_URL } from './config'
 import './db'
 import './services'
-import { logger } from './middleware'
+import { catchError, logger } from './middleware'
 export class Server {
     /**
      * expressd的app对象
@@ -36,6 +36,7 @@ export class Server {
         this.app.use(bodyParser.raw())
         this.app.use(formidableMiddleware()) // 解析 from 表单
         this.routes()
+        this.app.use(catchError)
     }
     /**
      * 路由
@@ -46,6 +47,6 @@ export class Server {
      * @memberof Server
      */
     private routes(): void {
-        this.app.use('/', router)
+        this.app.use(ROOT_URL, router)
     }
 }
