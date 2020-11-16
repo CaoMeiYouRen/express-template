@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from 'express'
 import { HttpStatusCode } from '@/models/HttpStatusCode'
 import { TIMEOUT } from '@/config'
 export async function handleTimeout(req: Request, res: Response, next: NextFunction) {
-    const time = 2000 // TIMEOUT
+    const time = TIMEOUT
     // 设置所有HTTP请求的服务器响应超时时间
     res.setTimeout(time, () => {
         // throw new HttpError(HttpStatusCode.REQUEST_TIMEOUT, '请求响应超时')
