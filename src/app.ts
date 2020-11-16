@@ -7,8 +7,7 @@ import router from './routes'
 import { ROOT_URL } from './config'
 import './db'
 import './services'
-import { catchError, logger } from './middleware'
-import { handleTimeout } from './middleware/timeout'
+import { catchError, logger, handleTimeout } from './middleware'
 export class Server {
     /**
      * expressd的app对象
