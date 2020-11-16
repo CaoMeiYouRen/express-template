@@ -26,3 +26,5 @@ export const IS_DEBUG = env.NODE_ENV === 'development'
 export const PORT = Number(env.PORT || 5000)
 
 export const ROOT_URL = env.ROOT_URL || '/'
+
+export const TIMEOUT = Number(env.TIMEOUT || 5000)

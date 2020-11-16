@@ -33,7 +33,8 @@
     "include": [
         "src/*.ts",
         "src/**/*.ts",
-        "node_modules/@types"
+        "node_modules/@types",
+        "src/index.d.ts"
     ],
     "exclude": [
         "node_modules",

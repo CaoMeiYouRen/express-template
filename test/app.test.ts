@@ -27,7 +27,24 @@ describe('app e2e测试', () => {
                 done(err)
                 return
             }
-            should(res.status === 200).ok()
+            done()
+        })
+    })
+    it('捕获同步异常', done => {
+        request(server).get('/error').expect(500, (err, res) => {
+            if (err) {
+                done(err)
+                return
+            }
+            done()
+        })
+    })
+    it('捕获异步异常', done => {
+        request(server).get('/async-error').expect(500, (err, res) => {
+            if (err) {
+                done(err)
+                return
+            }
             done()
         })
     })
