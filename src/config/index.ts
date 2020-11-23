@@ -28,3 +28,11 @@ export const PORT = Number(env.PORT || 5000)
 export const ROOT_URL = env.ROOT_URL || '/'
 
 export const TIMEOUT = Number(env.TIMEOUT || 5000)
+
+/**
+ * 限流配置
+ */
+export const LIMIT = {
+    LIMIT_INTERVAL: Number(env.LIMIT_INTERVAL || 60),
+    LIMIT_MAX: Number(env.LIMIT_MAX || 30)
+}

@@ -7,7 +7,7 @@ import { Log } from '@/utils'
 
 export function catchError(err: any, req: Request, res: Response, next: NextFunction) {
     let message: any = 'Unknown Error'
-    let statusCode = HttpStatusCode.INTERNAL_SERVER_ERROR
+    let statusCode = HttpStatusCode.INTERNAL_SERVER_ERROR // 500
     if (err instanceof HttpError) {
         message = err.message
         statusCode = err.statusCode
@@ -17,7 +17,7 @@ export function catchError(err: any, req: Request, res: Response, next: NextFunc
     } else if (typeof err === 'string') {
         message = err
     }
-    if (statusCode >= 500) {
+    if (statusCode >= HttpStatusCode.INTERNAL_SERVER_ERROR) {
         Log.error(message)
     }
     if (!res.headersSent) { // 若请求还未结束，则回复错误
