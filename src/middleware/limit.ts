@@ -20,8 +20,8 @@ export const limiter = RateLimit({
                 },
                 html() {
                     res.status(statusCode).end('<h1>请求次数超限\nToo many requests, please try again later.</h1>')
-                },
+                }
             })
         }
-    },
+    }
 })

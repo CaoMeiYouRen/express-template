@@ -30,6 +30,15 @@ describe('app e2e测试', () => {
             done()
         })
     })
+    it('捕获404异常', done => {
+        request(server).get('/404').expect(404, (err, res) => {
+            if (err) {
+                done(err)
+                return
+            }
+            done()
+        })
+    })
     it('捕获同步异常', done => {
         request(server).get('/error').expect(500, (err, res) => {
             if (err) {

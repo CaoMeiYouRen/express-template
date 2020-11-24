@@ -26,4 +26,5 @@ router.get('/timeout', async (req, res, next) => {
 router.all('*', (req, res, next) => {
     throw new HttpError(404, '404 Not Found')
 })
+
 export default router
