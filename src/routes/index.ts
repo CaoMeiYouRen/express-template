@@ -19,7 +19,7 @@ router.get('/timeout', async (req, res, next) => {
     res.json({ msg: '测试请求超时' })
 })
 
-router.get('*', (req, res, next) => {
-    res.json({ msg: 'hello world' })
+router.all('*', (req, res, next) => {
+    throw new HttpError(404, '404 Not Found')
 })
 export default router
