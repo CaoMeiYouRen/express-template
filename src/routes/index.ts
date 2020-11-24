@@ -3,6 +3,10 @@ import { printTime, sleep } from '@/utils'
 import express from 'express'
 const router = express.Router()
 
+router.all('/', (req, res, next) => {
+    res.json({ msg: 'hello world' })
+})
+
 router.get('/error', (req, res, next) => {
     throw new HttpError(500, '服务器出现错误')
 })
