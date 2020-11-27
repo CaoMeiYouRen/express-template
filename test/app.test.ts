@@ -13,13 +13,7 @@ describe('app e2e测试', () => {
         })
     })
     after(done => {
-        server.close(err => {
-            if (err) {
-                done(err)
-                return
-            }
-            done()
-        })
+        server.close(done)
     })
     it('根路由，应该成功200', done => {
         request(server).get('/').expect(200, (err, res) => {
@@ -31,30 +25,12 @@ describe('app e2e测试', () => {
         })
     })
     it('捕获404异常', done => {
-        request(server).get('/404').expect(404, (err, res) => {
-            if (err) {
-                done(err)
-                return
-            }
-            done()
-        })
+        request(server).get('/404').expect(404, done)
     })
     it('捕获同步异常', done => {
-        request(server).get('/error').expect(500, (err, res) => {
-            if (err) {
-                done(err)
-                return
-            }
-            done()
-        })
+        request(server).get('/error').expect(500, done)
     })
     it('捕获异步异常', done => {
-        request(server).get('/async-error').expect(500, (err, res) => {
-            if (err) {
-                done(err)
-                return
-            }
-            done()
-        })
+        request(server).get('/async-error').expect(500, done)
     })
 })
