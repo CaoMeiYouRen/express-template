@@ -3,7 +3,7 @@ import path = require('path')
 import fs = require('fs-extra')
 const modes = [
     '.env.local',
-    '.env'
+    '.env',
 ]
 let envParsed = {}
 for (let i = 0; i < modes.length; i++) {
@@ -34,5 +34,5 @@ export const TIMEOUT = Number(env.TIMEOUT || 5000)
  */
 export const LIMIT = {
     LIMIT_INTERVAL: Number(env.LIMIT_INTERVAL || 60),
-    LIMIT_MAX: Number(env.LIMIT_MAX || 30)
+    LIMIT_MAX: Number(env.LIMIT_MAX || 30),
 }

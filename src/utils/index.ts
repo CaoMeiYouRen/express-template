@@ -47,7 +47,7 @@ export const Log = {
      */
     error(msg: any) {
         console.error(`${colors.yellow(timeFormat(Date.now(), 'HH:mm:ss.SSS'))}:`, colors.red(msg))
-    }
+    },
 }
 
 /**

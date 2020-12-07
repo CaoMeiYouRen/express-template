@@ -16,13 +16,13 @@ morgan.format('json', JSON.stringify({
     status: ':status',
     'response-time': ':response-time',
     referrer: ':referrer',
-    'user-agent': ':user-agent'
+    'user-agent': ':user-agent',
 }))
 const accessLogStream = FileStreamRotator.getStream({
     date_format: 'YYYY-MM-DD',
     filename: path.join(logDir, '%DATE%.log'),
     frequency: 'daily',
-    verbose: false
+    verbose: false,
 })
 
 export const logger = morgan('app-combined', { stream: accessLogStream })
