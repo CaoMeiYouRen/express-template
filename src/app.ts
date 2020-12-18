@@ -2,6 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import compression from 'compression'
 import formidableMiddleware from 'express-formidable'
+import cors from 'cors'
 import 'express-async-errors' // 捕获异步异常
 import router from './routes'
 import { ROOT_URL } from './config'
@@ -33,6 +34,7 @@ export class Server {
         this.app.use(compression())
         this.app.use(handleTimeout)
         this.app.use(limiter)
+        this.app.use(cors())
         this.app.use(bodyParser.json())
         this.app.use(bodyParser.urlencoded({ extended: true }))
         this.app.use(bodyParser.text())
