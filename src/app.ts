@@ -1,7 +1,6 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import compression from 'compression'
-import formidableMiddleware from 'express-formidable'
 import cors from 'cors'
 import 'express-async-errors' // 捕获异步异常
 import router from './routes'
@@ -39,7 +38,6 @@ export class Server {
         this.app.use(bodyParser.urlencoded({ extended: true }))
         this.app.use(bodyParser.text())
         this.app.use(bodyParser.raw())
-        this.app.use(formidableMiddleware()) // 解析 from 表单
 
         this.routes()
 
