@@ -6,14 +6,18 @@ import { IS_DEBUG } from '@/config'
 import { Log } from '@/utils'
 
 export function catchError(err: any, req: Request, res: Response, next: NextFunction) {
-    let message: any = 'Unknown Error'
+    let message: string | undefined = 'Unknown Error'
     let statusCode = HttpStatusCode.INTERNAL_SERVER_ERROR // 500
+    let stack: string | undefined
     if (err instanceof HttpError) {
         message = err.message
         statusCode = err.statusCode
     } else if (err instanceof Error) {
-        // 开发阶段打印堆栈信息，否则打印 message
-        message = IS_DEBUG ? err.stack : err.message
+        message = err.message
+        // 开发阶段打印堆栈信息
+        if (IS_DEBUG) {
+            stack = err.stack
+        }
     } else if (typeof err === 'string') {
         message = err
     }
