@@ -24,6 +24,13 @@ export class ResponseDto {
      * @type {string}
      */
     error?: string
+
+    /**
+     * 错误堆栈
+     *
+     * @type {string}
+     */
+    stack?: string
     /**
      * 返回的数据
      *
