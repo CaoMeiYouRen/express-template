@@ -22,7 +22,7 @@ export function catchError(err: any, req: Request, res: Response, next: NextFunc
         message = err
     }
     if (statusCode >= HttpStatusCode.INTERNAL_SERVER_ERROR) {
-        Log.error(message)
+        Log.error(err)
     } else {
         Log.log(message)
     }

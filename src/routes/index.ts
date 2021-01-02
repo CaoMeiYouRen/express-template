@@ -1,10 +1,11 @@
 import { HttpError } from '@/models/HttpError'
+import { ResponseDto } from '@/models/ResponseDto'
 import { printTime, sleep } from '@/utils'
 import express from 'express'
 const router = express.Router()
 
 router.all('/', (req, res, next) => {
-    res.json({ msg: 'hello world' })
+    res.json(new ResponseDto({ message: 'hello world' }))
 })
 
 router.get('/error', (req, res, next) => {

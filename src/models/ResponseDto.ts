@@ -11,7 +11,7 @@ export class ResponseDto {
      *
      * @type {number}
      */
-    statusCode: number
+    statusCode?: number
     /**
      * 消息说明
      *
