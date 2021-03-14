@@ -23,6 +23,8 @@ const accessLogStream = FileStreamRotator.getStream({
     filename: path.join(logDir, '%DATE%.log'),
     frequency: 'daily',
     verbose: false,
+    size: '1g',
+    max_logs: '30d',
 })
 
 export const logger = morgan('app-combined', { stream: accessLogStream })
