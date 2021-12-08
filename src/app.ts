@@ -29,6 +29,9 @@ export class Server {
      * @memberof Server
      */
     private config(): void {
+        this.app.set('trust proxy', (ip: string) => {
+            return true
+        })
         this.app.use(logger)
         this.app.use(compression())
         this.app.use(handleTimeout)
