@@ -28,7 +28,7 @@
     "@types/express-formidable": "^1.0.5",
     "@types/express-rate-limit": "^6.0.0",
     "@types/fs-extra": "^11.0.1",
-    "@types/http-proxy": "^1.17.9",
+    "@types/http-proxy": "^1.17.10",
     "@types/mocha": "^10.0.1",
     "@types/module-alias": "^2.0.1",
     "@types/morgan": "^1.9.4",
