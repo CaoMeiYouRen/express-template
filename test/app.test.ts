@@ -1,6 +1,5 @@
 import http from 'http'
 import request from 'supertest'
-import should from 'should'
 import { Server } from '../src/app'
 import { PORT } from '../src/config'
 const app = new Server().app

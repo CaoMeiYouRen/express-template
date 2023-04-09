@@ -7,7 +7,7 @@ import router from './routes'
 import { ROOT_URL } from './config'
 import './db'
 import './services'
-import { catchError, logger, handleTimeout, limiter } from './middleware'
+import { catchError, fileLogger, consoleLogger, handleTimeout, limiter } from './middleware'
 export class Server {
     /**
      * expressd的app对象
@@ -30,7 +30,8 @@ export class Server {
      */
     private config(): void {
         this.app.set('trust proxy', (ip: string) => true)
-        this.app.use(logger)
+        this.app.use(consoleLogger)
+        this.app.use(fileLogger)
         this.app.use(compression())
         this.app.use(handleTimeout)
         this.app.use(limiter)
