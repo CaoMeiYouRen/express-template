@@ -65,7 +65,7 @@
     "fs-extra": "^11.1.1",
     "http-proxy": "^1.18.1",
     "lodash": "^4.17.21",
-    "module-alias": "^2.2.2",
+    "module-alias": "^2.2.3",
     "morgan": "^1.10.0"
   }
 }
