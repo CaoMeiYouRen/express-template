@@ -192,10 +192,10 @@
   resolved "https://registry.npm.taobao.org/@types/events/download/@types/events-3.0.0.tgz?cache=0&sync_timestamp=1605053125519&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fevents%2Fdownload%2F%40types%2Fevents-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha1-KGLz9Yqaf3w+eNefEw3U1xwlwqc=
 
-"@types/express-formidable@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@types/express-formidable/-/express-formidable-1.0.5.tgz#af70c63dac62f2c1577a600c14fcf38647b125a2"
-  integrity sha512-Vs8YD5j60Q8LwqvAI5qpNc7C/bqfjxlrV/vA8X51vqBXOc/jlKUxuQTHitBrm3Bwu8amwvslc1kB5d2radY+yA==
+"@types/express-formidable@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/express-formidable/-/express-formidable-1.2.1.tgz#c461f590c39bb53813bc09956a06e691bbdd49c4"
+  integrity sha512-76gerrS5n76r/n1uw4XgQknuvHGR0ExV9Dhf2gixOCBJdtw9/9zAlLALzGl7hjJsenVSMoB4h0Ro6L7xSky60w==
   dependencies:
     "@types/express" "*"
     "@types/formidable" "*"
