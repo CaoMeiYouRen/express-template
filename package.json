@@ -30,7 +30,7 @@
     "@types/express-rate-limit": "^6.0.0",
     "@types/fs-extra": "^11.0.3",
     "@types/http-proxy": "^1.17.13",
-    "@types/mocha": "^10.0.3",
+    "@types/mocha": "^10.0.4",
     "@types/module-alias": "^2.0.3",
     "@types/morgan": "^1.9.7",
     "@types/node": "^20.8.10",
