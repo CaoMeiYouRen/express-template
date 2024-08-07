@@ -82,8 +82,8 @@ importers:
         specifier: ^11.0.4
         version: 11.0.4
       '@types/http-proxy':
-        specifier: ^1.17.14
-        version: 1.17.14
+        specifier: ^1.17.15
+        version: 1.17.15
       '@types/mocha':
         specifier: ^10.0.6
         version: 10.0.7
@@ -261,8 +261,8 @@ packages:
   '@types/http-errors@2.0.4':
     resolution: {integrity: sha512-D0CFMMtydbJAegzOyHjtiKPLlvnm3iTZyZRSZoLq2mRhDdmLfIWOCYPfQJ4cu2erKghU++QvjcUjp/5h7hESpA==}
 
-  '@types/http-proxy@1.17.14':
-    resolution: {integrity: sha512-SSrD0c1OQzlFX7pGu1eXxSEjemej64aaNPRhhVYUGqXh0BtldAAx37MG8btcumvpgKyZp1F5Gn3JkktdxiFv6w==}
+  '@types/http-proxy@1.17.15':
+    resolution: {integrity: sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -1732,7 +1732,7 @@ snapshots:
 
   '@types/http-errors@2.0.4': {}
 
-  '@types/http-proxy@1.17.14':
+  '@types/http-proxy@1.17.15':
     dependencies:
       '@types/node': 22.1.0
 
