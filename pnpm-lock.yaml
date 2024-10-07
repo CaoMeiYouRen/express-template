@@ -36,8 +36,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       express-rate-limit:
-        specifier: ^7.4.0
-        version: 7.4.0(express@4.21.0)
+        specifier: ^7.4.1
+        version: 7.4.1(express@4.21.0)
       file-stream-rotator:
         specifier: ^1.0.0
         version: 1.0.0
@@ -733,6 +733,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -775,8 +776,8 @@ packages:
     resolution: {integrity: sha512-w1vXjF3gb50UKTNkFaW8/4rqY4dUrKfZ1sAZzwAF9YxCAgj/29QZsycf71di0GkskrZOAkubk9pvGYfxyAMYiw==}
     engines: {node: '>= 8'}
 
-  express-rate-limit@7.4.0:
-    resolution: {integrity: sha512-v1204w3cXu5gCDmAvgvzI6qjzZzoMWKnyVDk3ACgfswTQLYiGen+r8w0VnXnGMmzEN/g8fwIQ4JrFFd4ZP6ssg==}
+  express-rate-limit@7.4.1:
+    resolution: {integrity: sha512-KS3efpnpIDVIXopMc65EMbWbUht7qvTCdtCR2dD/IZmi9MIkopYESwyRqLgv8Pfu589+KqDqOdzJWW7AHoACeg==}
     engines: {node: '>= 16'}
     peerDependencies:
       express: 4 || 5 || ^5.0.0-beta.1
@@ -1706,7 +1707,7 @@ snapshots:
 
   '@types/express-rate-limit@6.0.0(express@4.21.0)':
     dependencies:
-      express-rate-limit: 7.4.0(express@4.21.0)
+      express-rate-limit: 7.4.1(express@4.21.0)
     transitivePeerDependencies:
       - express
 
@@ -2265,7 +2266,7 @@ snapshots:
     dependencies:
       formidable: 1.2.6
 
-  express-rate-limit@7.4.0(express@4.21.0):
+  express-rate-limit@7.4.1(express@4.21.0):
     dependencies:
       express: 4.21.0
 
