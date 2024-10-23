@@ -76,8 +76,8 @@ importers:
         specifier: ^1.0.5
         version: 1.2.3
       '@types/express-rate-limit':
-        specifier: ^6.0.0
-        version: 6.0.0(express@4.21.1)
+        specifier: ^6.0.2
+        version: 6.0.2(express@4.21.1)
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -242,8 +242,8 @@ packages:
   '@types/express-formidable@1.2.3':
     resolution: {integrity: sha512-bY6G/ACCUbtYc1MxDtj8MUMt6STP29s8DoHp8JK9/FL9ntOxHPJU8/1U4kVI/WpMIETnsM2YF/n3r/Jkg77klA==}
 
-  '@types/express-rate-limit@6.0.0':
-    resolution: {integrity: sha512-nZxo3nwU20EkTl/f2eGdndQkDIJYwkXIX4S3Vrp2jMdSdFJ6AWtIda8gOz0wiMuOFoeH/UUlCAiacz3x3eWNFA==}
+  '@types/express-rate-limit@6.0.2':
+    resolution: {integrity: sha512-e1xZLOOlxCDvplAGq7rDcXtbdBu2CWRsMjaIu1LVqGxWtKvwr884YE5mPs3IvHeG/OMDhf24oTaqG5T1bV3rBQ==}
     deprecated: This is a stub types definition. express-rate-limit provides its own type definitions, so you do not need this installed.
 
   '@types/express-serve-static-core@4.19.5':
@@ -1705,7 +1705,7 @@ snapshots:
       '@types/express': 4.17.21
       '@types/formidable': 3.4.5
 
-  '@types/express-rate-limit@6.0.0(express@4.21.1)':
+  '@types/express-rate-limit@6.0.2(express@4.21.1)':
     dependencies:
       express-rate-limit: 7.4.1(express@4.21.1)
     transitivePeerDependencies:
