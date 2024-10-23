@@ -27,7 +27,7 @@
     "@types/debug": "^4.1.12",
     "@types/express": "^5.0.0",
     "@types/express-formidable": "^1.0.5",
-    "@types/express-rate-limit": "^6.0.0",
+    "@types/express-rate-limit": "^6.0.2",
     "@types/fs-extra": "^11.0.4",
     "@types/http-proxy": "^1.17.15",
     "@types/mocha": "^10.0.9",
