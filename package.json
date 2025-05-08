@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
     "@types/compression": "^1.7.5",
-    "@types/cors": "^2.8.17",
+    "@types/cors": "^2.8.18",
     "@types/debug": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/express-formidable": "^1.0.5",
