@@ -32,7 +32,7 @@
     "@types/http-proxy": "^1.17.16",
     "@types/mocha": "^10.0.10",
     "@types/module-alias": "^2.0.4",
-    "@types/morgan": "^1.9.9",
+    "@types/morgan": "^1.9.10",
     "@types/node": "^22.15.30",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
