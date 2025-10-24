@@ -73,8 +73,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.2
       '@types/express-formidable':
-        specifier: ^1.0.5
-        version: 1.2.3
+        specifier: ^1.2.4
+        version: 1.2.4
       '@types/express-rate-limit':
         specifier: ^6.0.2
         version: 6.0.2(express@4.21.2)
@@ -257,8 +257,8 @@ packages:
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
-  '@types/express-formidable@1.2.3':
-    resolution: {integrity: sha512-bY6G/ACCUbtYc1MxDtj8MUMt6STP29s8DoHp8JK9/FL9ntOxHPJU8/1U4kVI/WpMIETnsM2YF/n3r/Jkg77klA==}
+  '@types/express-formidable@1.2.4':
+    resolution: {integrity: sha512-YnXVThw6bhvyEMosrIG9VB+AT1OS/8S4yjlcz0wL4tuAVmhSQTz9LlF2bMmToMiMuqRYPQfiPvB3JI72hFvzYg==}
 
   '@types/express-rate-limit@6.0.2':
     resolution: {integrity: sha512-e1xZLOOlxCDvplAGq7rDcXtbdBu2CWRsMjaIu1LVqGxWtKvwr884YE5mPs3IvHeG/OMDhf24oTaqG5T1bV3rBQ==}
@@ -270,8 +270,8 @@ packages:
   '@types/express@5.0.2':
     resolution: {integrity: sha512-BtjL3ZwbCQriyb0DGw+Rt12qAXPiBTPs815lsUvtt1Grk0vLRMZNMUZ741d5rjk+UQOxfDiBZ3dxpX00vSkK3g==}
 
-  '@types/formidable@3.4.5':
-    resolution: {integrity: sha512-s7YPsNVfnsng5L8sKnG/Gbb2tiwwJTY1conOkJzTMRvJAlLFW1nEua+ADsJQu8N1c0oTHx9+d5nqg10WuT9gHQ==}
+  '@types/formidable@3.4.6':
+    resolution: {integrity: sha512-LI4Hk+KNsM5q7br4oMVoaWeb+gUqJpz1N8+Y2Q6Cz9cVH33ybahRKUWaRmMboVlkwSbOUGgwc/pEkS7yMSzoWg==}
 
   '@types/fs-extra@11.0.4':
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
@@ -1856,10 +1856,10 @@ snapshots:
     dependencies:
       '@types/ms': 0.7.34
 
-  '@types/express-formidable@1.2.3':
+  '@types/express-formidable@1.2.4':
     dependencies:
       '@types/express': 5.0.2
-      '@types/formidable': 3.4.5
+      '@types/formidable': 3.4.6
 
   '@types/express-rate-limit@6.0.2(express@4.21.2)':
     dependencies:
@@ -1880,7 +1880,7 @@ snapshots:
       '@types/express-serve-static-core': 5.0.6
       '@types/serve-static': 1.15.7
 
-  '@types/formidable@3.4.5':
+  '@types/formidable@3.4.6':
     dependencies:
       '@types/node': 24.9.1
 
