@@ -33,7 +33,7 @@
     "@types/mocha": "^10.0.10",
     "@types/module-alias": "^2.0.4",
     "@types/morgan": "^1.9.10",
-    "@types/node": "^24.10.0",
+    "@types/node": "^24.10.1",
     "@types/supertest": "^6.0.3",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
