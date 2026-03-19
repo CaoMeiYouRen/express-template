@@ -24,7 +24,7 @@
     "@types/body-parser": "^1.19.6",
     "@types/compression": "^1.8.1",
     "@types/cors": "^2.8.19",
-    "@types/debug": "^4.1.12",
+    "@types/debug": "^4.1.13",
     "@types/express": "^5.0.1",
     "@types/express-formidable": "^1.2.4",
     "@types/express-rate-limit": "^6.0.2",
