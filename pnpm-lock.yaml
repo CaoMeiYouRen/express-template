@@ -36,8 +36,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       express-rate-limit:
-        specifier: ^8.5.1
-        version: 8.5.1(express@4.21.2)
+        specifier: ^8.5.2
+        version: 8.5.2(express@4.21.2)
       file-stream-rotator:
         specifier: ^1.0.0
         version: 1.0.0
@@ -826,8 +826,8 @@ packages:
     resolution: {integrity: sha512-w1vXjF3gb50UKTNkFaW8/4rqY4dUrKfZ1sAZzwAF9YxCAgj/29QZsycf71di0GkskrZOAkubk9pvGYfxyAMYiw==}
     engines: {node: '>= 8'}
 
-  express-rate-limit@8.5.1:
-    resolution: {integrity: sha512-5O6KYmyJEpuPJV5hNTXKbAHWRqrzyu+OI3vUnSd2kXFubIVpG7ezpgxQy76Zo5GQZtrQBg86hF+CM/NX+cioiQ==}
+  express-rate-limit@8.5.2:
+    resolution: {integrity: sha512-5Kb34ipNX694DH48vN9irak1Qx30nb0PLYHXfJgw4YEjiC3ZEmZJhwOp+VfiCYwFzvFTdB9QkArYS5kXa2cx2A==}
     engines: {node: '>= 16'}
     peerDependencies:
       express: '>= 4.11'
@@ -1865,7 +1865,7 @@ snapshots:
 
   '@types/express-rate-limit@6.0.2(express@4.21.2)':
     dependencies:
-      express-rate-limit: 8.5.1(express@4.21.2)
+      express-rate-limit: 8.5.2(express@4.21.2)
     transitivePeerDependencies:
       - express
 
@@ -2470,7 +2470,7 @@ snapshots:
     dependencies:
       formidable: 1.2.6
 
-  express-rate-limit@8.5.1(express@4.21.2):
+  express-rate-limit@8.5.2(express@4.21.2):
     dependencies:
       express: 4.21.2
       ip-address: 10.2.0
