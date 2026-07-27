@@ -42,8 +42,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       fs-extra:
-        specifier: ^11.3.5
-        version: 11.3.5
+        specifier: ^11.4.0
+        version: 11.4.0
       http-proxy:
         specifier: ^1.18.1
         version: 1.18.1(debug@4.4.3)
@@ -917,8 +917,8 @@ packages:
     resolution: {integrity: sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==}
     engines: {node: '>= 0.6'}
 
-  fs-extra@11.3.5:
-    resolution: {integrity: sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==}
+  fs-extra@11.4.0:
+    resolution: {integrity: sha512-EQsFzMUJkCKGr1ePqlYADkIUmHW1s3ZXr5Yqy6wbGrfUCphpl2maM/kyOIRA2HpP3AaFQTZXD4ldjek+nccddA==}
     engines: {node: '>=14.14'}
 
   fs.realpath@1.0.0:
@@ -2598,7 +2598,7 @@ snapshots:
 
   fresh@0.5.2: {}
 
-  fs-extra@11.3.5:
+  fs-extra@11.4.0:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.2.1
