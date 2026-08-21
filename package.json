@@ -55,7 +55,7 @@
     "compression": "^1.8.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
-    "dayjs": "^1.11.22",
+    "dayjs": "^1.11.23",
     "dotenv": "^17.4.2",
     "express": "^4.21.2",
     "express-async-errors": "^3.1.1",
