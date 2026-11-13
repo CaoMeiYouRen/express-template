@@ -36,8 +36,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       express-rate-limit:
-        specifier: ^8.7.3
-        version: 8.7.3(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1)
+        specifier: ^8.7.4
+        version: 8.7.4(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1)
       file-stream-rotator:
         specifier: ^1.0.0
         version: 1.0.0
@@ -793,8 +793,8 @@ packages:
     resolution: {integrity: sha512-w1vXjF3gb50UKTNkFaW8/4rqY4dUrKfZ1sAZzwAF9YxCAgj/29QZsycf71di0GkskrZOAkubk9pvGYfxyAMYiw==}
     engines: {node: '>= 8'}
 
-  express-rate-limit@8.7.3:
-    resolution: {integrity: sha512-zPLqDI2f0gV2WmGnacLf9XSSqn4VldRyP5LCzOwx0BKH40mO6+2PCFkoSsRO2jePx87/Kf6NUF6P2QOTKXHbQA==}
+  express-rate-limit@8.7.4:
+    resolution: {integrity: sha512-LKBXzX700wz3zAGNNmVnjRI5mEbYkLv7UbMI4+9Xa+JPcg2UZh6AgY/2CZh9RrJjFM5ttC/N1lD+KzyFoZITCw==}
     engines: {node: '>= 16'}
     peerDependencies:
       express: '>= 4.11'
@@ -1766,7 +1766,7 @@ snapshots:
 
   '@types/express-rate-limit@6.0.2(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1)':
     dependencies:
-      express-rate-limit: 8.7.3(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1)
+      express-rate-limit: 8.7.4(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1)
     transitivePeerDependencies:
       - express
       - supports-color
@@ -2356,7 +2356,7 @@ snapshots:
     dependencies:
       formidable: 1.2.6
 
-  express-rate-limit@8.7.3(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1):
+  express-rate-limit@8.7.4(express@4.21.2(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
       debug: 4.4.3(supports-color@8.1.1)
       express: 4.21.2(supports-color@8.1.1)
